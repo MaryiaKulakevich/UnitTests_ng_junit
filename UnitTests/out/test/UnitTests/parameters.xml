@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Calculator" verbose="1">
+
+    <test name="Sum Double Test">
+        <parameter name="a" value="1D"></parameter>
+        <parameter name="b" value="2D"></parameter>
+        <parameter name="expected" value="3D"></parameter>
+        <classes>
+            <class name="by.epam.at.module4.testng.SumDoubleTest"></class>
+        </classes>
+    </test>
+    <test name="Sum Double Test 2">
+        <parameter name="a" value="-0.01"></parameter>
+        <parameter name="b" value="0.02"></parameter>
+        <parameter name="expected" value="0.01"></parameter>
+        <classes>
+            <class name="by.epam.at.module4.testng.SumDoubleTest"></class>
+        </classes>
+    </test>
+</suite>

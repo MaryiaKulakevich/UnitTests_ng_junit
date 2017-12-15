@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Calculator" verbose="1" parallel="methods" thread-count="4">
+
+    <test name="Sub Long Test">
+        <classes>
+            <class name="by.epam.at.module4.testng.SubLongTest"></class>
+        </classes>
+    </test>
+
+    <test name="Sub Double Test ">
+        <classes>
+            <class name="by.epam.at.module4.testng.SubDoubleTest"></class>
+        </classes>
+    </test>
+
+</suite>

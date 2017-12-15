@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Calculator" verbose="1">
+
+    <test name="Check Positive Test">
+        <classes>
+            <class name="by.epam.at.module4.testng.IsPositiveTest">
+                <methods>
+                    <include name="testPositive.*"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Check Negative Test">
+        <groups>
+            <run>
+                <include name="t"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="by.epam.at.module4.testng.isNegativeTest">
+            </class>
+        </classes>
+    </test>
+
+</suite>
